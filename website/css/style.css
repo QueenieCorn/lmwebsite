@@ -13,7 +13,23 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/GothamBook.eot');
+    src: url('../fonts/GothamBook.eot') format('embedded-opentype'),
+         url('../fonts/GothamBook.woff2') format('woff2'),
+         url('../fonts/GothamBook.woff') format('woff'),
+         url('../fonts/GothamBook.ttf') format('truetype'),
+         url('../fonts/GothamBook.svg#GothamBook') format('svg');
+}
+
+
 /*HEADER*/
+
+header {
+    padding: 20px 0 10px;
+}
 
 header ul li{
 	list-style-image: url('../images/check.jpg');
@@ -40,6 +56,8 @@ form p{
 form a{
 	color: #fff;
 }
+
+
 
 .form-group {
     margin-bottom: 25px;
@@ -68,6 +86,16 @@ form a{
 
 /*MAIN RIGHT*/
 
+.law{
+    text-align: center;
+}
+
+.law img{
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+}
+
 .law-rat {
     display: inline-block;
 }
@@ -78,13 +106,17 @@ form a{
 
 .name{
 	font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'Conv_Gotham-Medium';
 }
 
-.address{font-size: 11px;}
+.address{font-size: 11px;font-family: 'Conv_Gotham-Medium'; color: #dadada;}
 
 .review{
 	color: #fbd243;
-	font-size: 10px;
+	font-size: 12px;
+	font-family: 'GothamBook';
 }
 
 .review:after{
@@ -92,5 +124,49 @@ form a{
 	content: url(../images/book.png);
 	height: 20px;
 	width: 20px;
+	padding-left: 5px;
+	position: relative;
+    top: 3px;
 }
 
+.lawyers {
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+
+
+.lawyers:last-child{
+	border-bottom: 0px solid;
+}
+
+/*FOOTER*/
+footer {
+    padding: 40px 0 50px;
+}
+.footer-nav ul{
+	padding: 0;
+	text-align: center;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.footer-nav ul li a{
+	color: #b2b8bd;
+}
+
+.footer-nav ul li:after {
+    content: "•";
+    padding-left: 15px;
+    color: #b2b8bd;
+}
+
+.footer-nav ul li:last-child:after {
+	content: " ";
+	padding-left: 0px;
+}
+.footer-nav p {
+    padding: 20px 0 10px;
+    color: #b2b8bd;
+}

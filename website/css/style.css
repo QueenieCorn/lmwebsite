@@ -144,6 +144,7 @@ form a{
 
 .law-rat {
     display: inline-block;
+    padding-left: 10px;
 }
 
 .law-rat i{
@@ -163,6 +164,10 @@ form a{
 	color: #fbd243;
 	font-size: 12px;
 	font-family: 'GothamBook';
+}
+.review:hover{
+    color: #fff;
+    text-decoration: none;
 }
 
 .review:after{
@@ -204,7 +209,7 @@ form a{
     padding-right: 10px;
 }
 
-.modal-body{
+.more-cat.modal-body{
 	padding: 0 30px;
 	max-height: 350px;
 }
@@ -218,17 +223,44 @@ form a{
 .more-cat.modal-body p {
     color: #1864af;
 }
-.modal-footer hr{
-    margin-top: 35px;
-    margin-bottom: 26px;
-    border: 0;
-    border-top: 2px solid #666666;
-}
 .modal-footer.lawyer {
     text-align: left;
+    padding: 15px 20px;
+}
+.modal-header.lawyer-header {
+    padding: 10px 16px;
+    /* font-size: 26px !important; */
+}
+.lawyer-header h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.personal h2 {
+    margin-top: 0;
+}
+.personal {
+    border-top: 2px solid #666;
+    padding-top: 15px;
 }
 .read-close{float: right;}
+.rates {
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
+    padding: 20px 0;
+}
+.gray-star{
+    color: #666666 !important;
+}
+.fa-star {
+    color: #d69024;
+}
+.user-rate {
+    font-size: 20px;
+}
 
+.user-rate span {
+    padding-right: 10px;
+}
 /*FOOTER*/
 footer {
     padding: 40px 0 50px;
@@ -259,4 +291,20 @@ footer {
 .footer-nav p {
     padding: 20px 0 10px;
     color: #b2b8bd;
+}
+
+.fright{float: right;}
+.fleft{float: left;}
+
+/*MEDIA*/
+
+@media screen and (max-width: 767px) {
+    footer img {
+        margin: 0 auto;
+    }
+
+    .head-desc{float: none !important;
+    text-align: center;
+    width: 270px;
+    margin: 0 auto;}
 }

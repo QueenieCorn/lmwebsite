@@ -1,0 +1,96 @@
+/* FONTS */
+@font-face {
+	font-family: 'Conv_Gotham-Light';
+	src: url('../fonts/Gotham-Light.eot');
+	src: local('☺'), url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf') format('truetype'), url('../fonts/Gotham-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gotham-Medium';
+	src: url('../fonts/Gotham-Medium.eot');
+	src: local('☺'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*HEADER*/
+
+header ul li{
+	list-style-image: url('../images/check.jpg');
+}
+
+.padding0{padding: 0;}
+
+/*MAIN*/
+#main{background: url('../images/mainbg.jpg') no-repeat ;  background-size: cover; color: white;}
+h1{	font-family: 'Conv_Gotham-Light'; font-size: 42px; }
+
+h2{font-family: 'Conv_Gotham-Medium'; font-size: 30px;}
+
+/*MAIN LEFT*/
+form {
+    padding: 50px 0;
+}
+
+form p{
+	font-size: 18px;
+	color: #fff;
+}
+
+form a{
+	color: #fff;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label{
+	font-size: 18px;
+	padding: 7px 0;
+}
+
+.form-group input  {
+        padding: 30px 60px;
+    border-radius: 50px;
+    background-image: url(../images/num1.png);
+    background-repeat: no-repeat;
+    background-position: 13px center;
+}
+.form-group select{
+	background-image: url(../images/num2.png);
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    padding: 0px 60px;
+    height: 62px;
+    border-radius: 50px;
+}
+
+/*MAIN RIGHT*/
+
+.law-rat {
+    display: inline-block;
+}
+
+.law-rat i{
+	color: #d89108;
+}
+
+.name{
+	font-size: 13px;
+}
+
+.address{font-size: 11px;}
+
+.review{
+	color: #fbd243;
+	font-size: 10px;
+}
+
+.review:after{
+	/*content: "";*/
+	content: url(../images/book.png);
+	height: 20px;
+	width: 20px;
+}
+

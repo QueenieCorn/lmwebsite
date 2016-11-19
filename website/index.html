@@ -50,15 +50,45 @@
     
             <div class="form-group">
               <label for="sel1">Choose a category:</label>
-              <select class="form-control" id="sel1">
-                <option>Click to choose a legal category 1</option>
-                <option>Click to choose a legal category 2</option>
-                <option>Click to choose a legal category 3</option>
-                <option>Click to choose a legal category 4</option>
-              </select>
+              <div class="dropdown cat-drop-menu">
+                <button class="btn btn-white dropdown-toggle" type="button" data-toggle="dropdown">Click to choose a legal category
+                <span class="arrow-down pull-right"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+                <ul class="dropdown-menu">
+                  <li data-toggle="modal" data-target="#myCat"> <a href="#"> Criminal Defense </a> </li>
+                  <li data-toggle="modal" data-target="#myCat"> <a href="#"> Business </a> </li>
+                  <li> <a href=""> Personal Injury </a> </li>
+                  <li> <a href=""> Bankruptcy & Finances </a> </li>
+                  <li> <a href=""> Products & Services </a> </li>
+                  <li> <a href=""> Employment </a> </li>
+                  <li> <a href=""> Real State </a> </li>
+                  <li> <a href=""> Immigration </a> </li>
+                  <li> <a href=""> Wills, Trusts & Estates </a> </li>
+                  <li> <a href=""> Government </a> </li>
+                  <li> <a href=""> Intellectual Property </a> </li>
+                </ul>
+              </div>
+              
+              <!-- <select class="form-control selectpicker" id="sel1">
+                <optgroup>
+                  <option >Family</option>
+                <option data-toggle="modal" data-target="#myModal">Criminal Defense</option>
+                <option data-toggle="modal" data-target="#myModal">Business</option>
+                <option>Personal Injury</option>
+                <option>Bankruptcy & Finances</option>
+                <option>Products & Services</option>
+                <option>Employment</option>
+                <option>Real State</option>
+                <option>Immigration</option>
+                <option>Wills, Trusts & Estates</option>
+                <option>Government</option>
+                <option>Intellectual Property</option>
+                </optgroup>
+                
+
+              </select> -->
             </div>
 
-            <p class="text-center">Can’t find your category? <a href="#">Click here.</a></p>
+            <p class="text-center">Can’t find your category? <a href="#" data-toggle="modal" data-target="#moreCat">Click here.</a></p>
           </form>
         </div>
         <div class="col-sm-6 col-xs-12">
@@ -130,7 +160,7 @@
               <div class="law-desc">
                 <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</p>
               </div>
-              <a href="#" class="review pull-right">Read Review</a>
+              <a href="#" class="review pull-right " data-toggle="modal" data-target="#readReview" >Read Review</a>
             </div>
           </div>
 
@@ -171,11 +201,173 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal select cat -->
+  <div class="modal fade" id="myCat" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><img src="images/num3.png" align="left" class="img-responsive"> Which <span>Family law</span> issue(s) apply to your case?</h4>
+        </div>
+        <div class="modal-body">
+          <!-- <div class="container"> -->
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Adoptions</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Guardianship</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Child Custody and Visitation</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Paternity</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Child Support</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Separations</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Divorce</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Spousal Support or Alimony</label>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-law-blue" data-dismiss="modal">FIND A LAWYER NOW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal More cat -->
+  <div class="modal fade" id="moreCat" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">OTHER CATEGORIES</h4>
+          <p>Choose the category that best fits your case</p>
+        </div>
+        <div class="more-cat modal-body">
+          <!-- <div class="container"> -->
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <p>Abuse (Child, Domestic, Sexual)</p>
+                <p>Agencies & Administration</p>
+                <p>Automobile ( DUI, Crimes, Speeding )</p>
+                <p>Automobiles ( Accidents, Insurance )</p>
+                <p>Banking ( Business, Consumer )</p>
+                <p>Bars & Restaurants</p>
+                <p>Business Formation & Dissolution</p>
+                <p>Children (Adoption, Custody, Support)</p>
+                <p>Class Actions (Bad Drugs, Products)</p>
+                <p>Commercial Law and Contracts</p>
+                <p>Commercial Real Estate</p>
+                <p>Constitutional Law</p>
+                <p>Construction (Disputes, Liens)</p>
+                <p>Categories Item Here</p>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <p>Loremipsum Dolorsitamet,</p>
+                <p>Lonsectetur Scingelit  (Baseererkj, Mereit)</p>
+                <p>Miam Euvelit</p>
+                <p>Mempor Auctor (Estiarma, Toeruslej)</p>
+                <p>Nisultricies Dictumest.</p>
+                <p>Ntfring Sodalelit (Aeeticl Restoustoust)</p>
+                <p>Ntvarius Lectus & Congue </p>
+                <p>Pellentesque</p>
+                <p>Rigula Aliquamattis (Nestusotu, Wewreist)</p>
+                <p>Set Tigulempor</p>
+                <p>Sehicula Sedsitamet</p>
+                <p>Seque Nesturre </p>
+                <p>Tollis Gaurissed</p>
+                <p>Tempor Auctor (Estiarma, Toeruslej)</p>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-law-blue" data-dismiss="modal">FIND A LAWYER NOW</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Read Review -->
+  <div class="modal fade" id="readReview" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Client Reviews</h4>
+          
+        </div>
+        <div class="modal-body">
+          <!-- <div class="container"> -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="personal">
+                  <img src="images/lawyer3.png" class="img-responsive" align="left">
+                  <h2>Brigida R.</h2>
+                  <p>
+                    Dallas, TX
+                  <span>
+                    Family Law
+                  </span>
+                  </p>
+                </div>
+
+                <div class="rates">
+                  <p>Overall <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p>
+                  <p>Responded in a timely ;manner <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p>
+                  <p>Answered questions clearly <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p> 
+                  <p>Understood needs <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p> 
+                  <p>Gave complete and clear information <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p> 
+                  <p>Knowledgeable in legal area <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p> 
+                  <p>Good value for money <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p> 
+                  <p>Would hire again <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p> 
+                  <p>Would recommend to friend <span class="pull-right"><i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i> <i class=" fa fa-star" aria-hidden="true"></i></span></p>
+                </div>
+
+                <div>
+
+                  <p class="by-client"><i class=" fa fa-star" aria-hidden="true"></i><i class=" fa fa-star" aria-hidden="true"></i><i class=" fa fa-star" aria-hidden="true"></i><i class=" fa fa-star" aria-hidden="true"></i><i class=" fa fa-star" aria-hidden="true"></i>by Dexter Marchal, 06/10/2016</p>
+
+                  <p>Deb did a great job. Got my bench warrant set aside ... was sure I was
+going to jail ... phew. Judge seemed to respect her and I got what I </p>
+
+                </div>
+
+              </div>
+
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default read-close" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
 
 </body>
-  
-  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"=></script>
 
 </html>

@@ -75,13 +75,59 @@ form a{
     background-repeat: no-repeat;
     background-position: 13px center;
 }
-.form-group select{
+/*.form-group select{
 	background-image: url(../images/num2.png);
     background-repeat: no-repeat;
     background-position: 13px center;
     padding: 0px 60px;
     height: 62px;
     border-radius: 50px;
+    -webkit-appearance: none;
+}*/
+.cat-drop-menu button {
+	background-image: url(../images/num2.png) !important;
+	background-repeat: no-repeat;
+    background-position: 13px center;
+    width: 100%;
+    text-align: left;
+    padding: 20px 20px 20px 60px;
+    border-radius: 50px;
+}
+.cat-drop-menu.open ul {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+.btn-white {
+    background: #fff;
+}
+.dropdown.cat-drop-menu button {
+    color: #4e555c;
+    line-height: 27px;
+}
+.arrow-down {
+    font-size: 27px;
+    line-height: 0px;
+}
+.dropdown-menu>li>a:hover {
+    background-color: #bcd3e3;
+    font-weight: bold;
+}
+
+.btn-law-blue {
+    background: #02377b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Conv_Gotham-Medium';
+}
+
+.btn-law-blue:hover{
+	color: #fff;
+}
+
+.checkbox, .radio{
+	padding: 10px 0;
 }
 
 /*MAIN RIGHT*/
@@ -138,6 +184,42 @@ form a{
 .lawyers:last-child{
 	border-bottom: 0px solid;
 }
+/* num3 modal */
+.modal-footer {
+    text-align: center;
+}
+
+.modal-header {
+	padding-top: 40px;
+    border-bottom: 0px solid #e5e5e5;
+
+}
+
+.modal-title {
+	padding-left: 8px;
+    line-height: 32px;
+}
+
+.modal-title img {
+    padding-right: 10px;
+}
+
+.modal-body{
+	padding: 0 15px;
+	max-height: 350px;
+}
+.more-cat.modal-body{
+	overflow-x: hidden;
+}
+.modal-footer{
+	border-top: 0px solid #e5e5e5;
+	padding-bottom: 40px;
+}
+.modal-body p {
+    color: #1864af;
+}
+
+.read-close{float: right;}
 
 /*FOOTER*/
 footer {
